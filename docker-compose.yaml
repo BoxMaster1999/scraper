@@ -1,0 +1,8 @@
+services:
+  scrap-app:
+    build:
+      dockerfile: Dockerfile
+    volumes:
+      - ./tmp:/tmp
+    ports:
+      - '8080:8080'
